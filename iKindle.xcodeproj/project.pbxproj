@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		813DAE5E213092E900DD8B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DAE5D213092E900DD8B00 /* AppDelegate.swift */; };
 		813DAE60213092E900DD8B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DAE5F213092E900DD8B00 /* ViewController.swift */; };
-		813DAE63213092E900DD8B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813DAE61213092E900DD8B00 /* Main.storyboard */; };
 		813DAE65213092EB00DD8B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813DAE64213092EB00DD8B00 /* Assets.xcassets */; };
 		813DAE68213092EB00DD8B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813DAE66213092EB00DD8B00 /* LaunchScreen.storyboard */; };
+		8155F6972131871D00EBBD0C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8155F6962131871D00EBBD0C /* Models.swift */; };
+		8155F6992131974100EBBD0C /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8155F6982131974100EBBD0C /* BookCell.swift */; };
+		815F34822131BF33004B8026 /* BookPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815F34812131BF33004B8026 /* BookPagerController.swift */; };
+		81A8448B2132B03D00A3E4F6 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A8448A2132B03D00A3E4F6 /* PageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		813DAE5A213092E900DD8B00 /* iKindle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKindle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813DAE5D213092E900DD8B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		813DAE5F213092E900DD8B00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		813DAE62213092E900DD8B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		813DAE64213092EB00DD8B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		813DAE67213092EB00DD8B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		813DAE69213092EB00DD8B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8155F6962131871D00EBBD0C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		8155F6982131974100EBBD0C /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		815F34812131BF33004B8026 /* BookPagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPagerController.swift; sourceTree = "<group>"; };
+		81A8448A2132B03D00A3E4F6 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		813DAE5C213092E900DD8B00 /* iKindle */ = {
 			isa = PBXGroup;
 			children = (
+				815F34842131C203004B8026 /* Models */,
+				815F34852131C20E004B8026 /* Views */,
+				815F34832131C1F0004B8026 /* Controllers */,
 				813DAE5D213092E900DD8B00 /* AppDelegate.swift */,
-				813DAE5F213092E900DD8B00 /* ViewController.swift */,
-				813DAE61213092E900DD8B00 /* Main.storyboard */,
 				813DAE64213092EB00DD8B00 /* Assets.xcassets */,
 				813DAE66213092EB00DD8B00 /* LaunchScreen.storyboard */,
 				813DAE69213092EB00DD8B00 /* Info.plist */,
 			);
 			path = iKindle;
+			sourceTree = "<group>";
+		};
+		815F34832131C1F0004B8026 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				813DAE5F213092E900DD8B00 /* ViewController.swift */,
+				815F34812131BF33004B8026 /* BookPagerController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		815F34842131C203004B8026 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8155F6962131871D00EBBD0C /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		815F34852131C20E004B8026 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8155F6982131974100EBBD0C /* BookCell.swift */,
+				81A8448A2132B03D00A3E4F6 /* PageCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +157,6 @@
 			files = (
 				813DAE68213092EB00DD8B00 /* LaunchScreen.storyboard in Resources */,
 				813DAE65213092EB00DD8B00 /* Assets.xcassets in Resources */,
-				813DAE63213092E900DD8B00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8155F6992131974100EBBD0C /* BookCell.swift in Sources */,
+				815F34822131BF33004B8026 /* BookPagerController.swift in Sources */,
+				81A8448B2132B03D00A3E4F6 /* PageCell.swift in Sources */,
+				8155F6972131871D00EBBD0C /* Models.swift in Sources */,
 				813DAE60213092E900DD8B00 /* ViewController.swift in Sources */,
 				813DAE5E213092E900DD8B00 /* AppDelegate.swift in Sources */,
 			);
@@ -143,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		813DAE61213092E900DD8B00 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				813DAE62213092E900DD8B00 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		813DAE66213092EB00DD8B00 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,13 +313,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM9V6QDM3G;
 				INFOPLIST_FILE = iKindle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eliamyro.iKindle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -303,13 +332,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM9V6QDM3G;
 				INFOPLIST_FILE = iKindle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eliamyro.iKindle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
